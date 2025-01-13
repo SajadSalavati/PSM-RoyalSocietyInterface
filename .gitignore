@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / cache
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing / coverage / linting caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Trained model weights (large binaries live on Zenodo/Drive, not in git)
+*.pt
+*.pth
+*.ckpt
+
+# Raw / large datasets (see data/README.md for how to obtain them)
+*.npz
+!POD Results/*.npz
+data/raw/
+data/interim/
+data/processed/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
