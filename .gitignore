@@ -30,7 +30,7 @@ htmlcov/
 
 # Raw / large datasets (see data/README.md for how to obtain them)
 *.npz
-!POD Results/*.npz
+!results/*.npz
 data/raw/
 data/interim/
 data/processed/
