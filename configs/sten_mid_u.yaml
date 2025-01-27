@@ -1,0 +1,25 @@
+# Experiment: v_x field, Sten model, Mid region.
+# This single file replaces the hand-edited constants of the original
+# Code_*.ipynb notebook. Run with:
+#   python -m psm_surrogate.cli --config configs/sten_mid_u.yaml --stage all
+name: sten_mid_u
+model: Sten
+bc_name: Mid
+variable_name: v_x
+
+field_key: v_x
+npz_filename: "rylScty_patientSpec_StenosisModel_miduvw.npz"
+n_snapshots: 1000
+
+num_modes: 33
+
+time_window: 100
+test_split: 0.8
+
+hidden_size: 512
+num_layers: 3
+dropout: 0.2
+learning_rate: 1.0e-5
+num_epochs: 200000
+batch_size: 20
+early_stop_patience: 100
