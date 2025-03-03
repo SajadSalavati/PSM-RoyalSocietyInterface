@@ -96,7 +96,7 @@ def load_config(path: str) -> ExperimentConfig:
     Unknown keys are collected into ``extra`` instead of raising, so newer configs
     stay loadable by older code.
     """
-    with open(path, "r", encoding="utf-8") as fh:
+    with open(path, encoding="utf-8") as fh:
         raw = yaml.safe_load(fh) or {}
 
     known = {f for f in ExperimentConfig.__dataclass_fields__ if f != "extra"}
