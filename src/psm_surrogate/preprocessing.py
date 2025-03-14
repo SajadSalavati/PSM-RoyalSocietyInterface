@@ -23,7 +23,7 @@ class MinMaxScaler1D:
     max_: np.ndarray
 
     @classmethod
-    def fit(cls, arr: np.ndarray) -> "MinMaxScaler1D":
+    def fit(cls, arr: np.ndarray) -> MinMaxScaler1D:
         return cls(min_=np.min(arr, axis=0), max_=np.max(arr, axis=0))
 
     def transform(self, arr: np.ndarray) -> np.ndarray:
